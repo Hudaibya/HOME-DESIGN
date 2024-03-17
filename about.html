@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="product.css" rel="stylesheet">
+</head>
+<style>
+
+body {
+    padding-top: 56px; /* Adjusted for the fixed navbar height */
+    background-color:#ffffff;/* Black background color */
+    color: #1a1c1d; /* White text color */
+    transition: background-color 0.3s; /* Add a smooth transition effect */
+}   
+    nav {
+    box-shadow: 10 10 10px#000000b5;
+    background:#474eab;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    body {
+        padding-top: 70px; /* Adjusted for the fixed navbar height in mobile view */
+    }
+
+    .navbar-nav .nav-item {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    }
+    .custom-bg {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .custom-bg img {
+      width: 100%;
+      height: auto;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for transparency */
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+     .overlay {
+      opacity: 1;
+    }
+    .text-over-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      text-align:center;
+    }
+    .footer-custom{
+        background-color:#474eab; /* Footer background color */
+        color: #ffffff; /* Footer text color */
+        padding: 30px 0;
+    }
+    .btn-visit {
+      background-color:#474eab;
+      margin-top: 10px;
+      color: #ffffff;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-visit:hover {
+      background-color: #ffffff; /* Set the hover background color */
+      color: #474eab;
+    }
+
+    .btn-custom {
+      background-color:#474eab; /* Set the initial background color */
+      color: #ffffff; /* Set the initial text color */
+      transition: background-color 0.3s ease;
+      margin-top: 20px;
+    }
+
+    .btn-custom:hover {
+      background-color: #ffffff; /* Set the hover background color */
+      color: #474eab;
+    }
+    
+    
+</style>
+<body>
+    <header>
+    <div class="container-fluid w-100 clr">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <i class="fa-solid fa-h  fa-xs" style="color:#ffffff;"></i>
+                    <i class="fa-solid fa-o fa-xs" style="color: #efefef; "></i>
+                    <i class="fa-solid fa-m fa-xs" style="color: #efefef;"></i>
+                    <i class="fa-solid fa-e fa-xs" style="color:  #efefef; "></i>
+                    <i class="fa-solid fa-home fa-fade fa-xs" style="color: #fdc598;"></i>
+                    <i class="fa-solid fa-d fa-xs" style="color:  #efefef; "></i>
+                    <i class="fa-solid fa-e fa-xs" style="color: #efefef;"></i> 
+                    <i class="fa-solid fa-s fa-xs" style="color:  #efefef; "></i>
+                    <i class="fa-solid fa-i fa-xs" style="color: #efefef;"></i>
+                    <i class="fa-solid fa-g fa-xs" style="color:  #efefef; "></i>
+                    <i class="fa-solid fa-n fa-xs" style="color: #efefef;"></i>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="">About</a>
+                        </li>
+                        <li class="nav-item">
+                              <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Contact</a>
+                            </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+ 
+    <section>
+        <div class="custom-bg">
+            <img src="1000_F_530774659_C1DUULAPBjeWmbZqFGlPjtUGLsprkDos.jpg" alt="Your Image">
+            <div class="overlay">
+              <div class="text-over-image">
+                <hr>
+                <h2>[HOME DESIGN]</h2>
+                <p>"Welcome to our home design haven, where creativity meets comfort and innovation intertwines with
+                    style. At [HOME DESIGN], we invite you to embark on a journey of inspiration, transforming
+                    your living spaces into personalized reflections of your unique taste and personality. Whether you're
+                    seeking modern minimalism, timeless elegance, or bold statements, our curated collection of home
+                    designs awaits your exploration. Our commitment is to provide you with a seamless and enjoyable 
+                    experience as you navigate through a myriad of possibilities. Feel free to browse through our 
+                    carefully crafted designs, expert tips, and a wealth of resources to spark your imagination. 
+                    At [HOME DESIGN], we believe that every home has a story to tell, and we are excited to be a 
+                    part of yours. Welcome home!"<br>
+                    <a href="home.html" class="btn btn-visit ">VISIT OUR WEBSITE </a>   
+                </p><hr>         
+
+                    <button type="button" class="btn btn-custom ">Sign up </button>
+                    <button type="button" class="btn btn-custom ">Log In </button>
+              </div>
+            </div>
+          </div>
+    </section>
+
+         
+    
+        
+    
+    
+
+
+    <footer class="py-5 footer-custom">
+        <div class="container">
+            <p class="m-0 text-center text-light">© 2024 [HOME DESIGN]</p>
+            <a href="http://127.0.0.1:5500/bootstrap/practice.html#"></a>
+        </div>
+    </footer>
+
+
+
+    
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+
+
+
+
